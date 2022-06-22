@@ -1,11 +1,11 @@
 <html>
 <head>
 
-<title>Pictochat Test</title>
-<script src="www/howler.min.js"></script>
-<script src="www/pixi.min.js"></script>
-<link rel="stylesheet" href="www/nano.min.css"/>
-<script src="www/pickr.min.js"></script>
+<title>Pictochat Online</title>
+<script src="howler.min.js"></script>
+<script src="pixi.min.js"></script>
+<link rel="stylesheet" href="nano.min.css"/>
+<script src="pickr.min.js"></script>
 <style>
 /*** iPhone and iOS Form Input Zoom Fixes ***/
 /* Fix Input Zoom on devices older than iPhone 5: */
@@ -46,10 +46,10 @@
 
 @font-face {
 	font-family: "nds";
-	src: url("www/nds.ttf");
+	src: url("nds.ttf");
 }
 body {
-	background-image: url('www/images/body-bg.png');
+	background-image: url('images/body-bg.png');
 	margin: 0;
 	font-size: 16px;
 }
@@ -166,26 +166,26 @@ input[type=text] {
 
 <div id="root">
 	<div id="intro">
-		<img src="www/images/intro_bg.png" id="intro_bg"></img>
+		<img src="images/intro_bg.png" id="intro_bg"></img>
 		<div id="main-settings">
-		<img src="www/images/logo.png" id="logo" onclick="requestVerification()"></img>
-		<div class="intro-text">Nickname! :</div>
+		<img src="images/logo.png" id="logo" onclick="requestVerification()"></img>
+		<div class="intro-text">Username:</div>
 		<input type="text" id="name_box" spellcheck="false" maxlength="10" onkeyup="fixUserbox(this)"></input>
 		<div class="intro-text">Color:</div>
 		<div class="colorpicker"></div>
-		<img src="www/images/other_settings.png" id="other_settings" onclick="otherSettings()"></img>
+		<img src="images/other_settings.png" id="other_settings" onclick="otherSettings()"></img>
 		</div>
 	</div>
 	<div id="settings">
 		<div id="settings-container">
 			<div style="margin-bottom: 5px; border-bottom: 1px solid black; padding: 5px; text-align: center;">Other Settings</div>
 			<label for="int-scaling"><input type="checkbox" id="int-scaling" onchange="intScaling(true)"></input> Integer Scaling</label>
-			<div id="settings-done"><img src="www/images/done.png" onclick="closeOtherSettings()"></img></div>
+			<div id="settings-done"><img src="images/done.png" onclick="closeOtherSettings()"></img></div>
 		</div>
 	</div>
 </div>
 
-<script src="www/main.js"></script>
+<script src="main.js"></script>
 <script>
 const swatches = [
 	'#61829a',
